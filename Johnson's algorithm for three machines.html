@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Алгоритм Джонсона для 3 машин Матевосян А.А.</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer="" src="js/jquery.min.js"></script>
+    <script defer="" src="js/bootstrap.min.js"></script>
+    <script defer="" src="js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="chrome-extension://napifgkjbjeodgmfjmgncljmnmdefpbf/styles.css"></head>
+<body>
+<div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" >Алгоритм Джонсона для 3 машин Матевосян А.А.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <div class="input-data-forms">
+                <form class="count-rows-form" id="count-rows-form">
+                    <b align="left">Алгоритм Джонсона.
+                    </b>
+                    <div align="left">
+                        В задаче Джонсона общее время производственного цикла зависит от порядка запуска деталей в обработку.<br>
+                        Пусть имеется n деталей, каждая из которых должна последовательно пройти обработку сначала на первом, затем на втором станке и на третьем.<br>
+                        Предполагается заданным время t обработки i-й детали на j-м станке (i=1,2,...,n; j=1,2). Требуется определить такой порядок запуска деталей,<br> 
+                        при котором общая длительность их обработки на обоих станках будет минимальной.
+                    </div>    
+                    <p>Для решения задачи необходимо задать количество деталей (строк):</p>
+                    <div class="row w-100 d-flex justify-content-center">
+                        <div class="form-group mb-0 w-25 mr-2">
+                            <input type="number" class="form-control" id="input-rows-count" placeholder="Введите кол-во" min="1" max="25" required="">
+                        </div>
+                        <button type="submit" class="btn btn-primary ml-2 pr-4 pl-4">Принять</button>
+                    </div>
+                </form>
+                <form class="details-form" id="details-form">
+                    <p>Время обработки на машине (станке):</p>
+                    <div class="details-form__machines-text">
+                        <p>на 1 (A)</p>
+                        <p>на 2 (B)</p>
+                        <p>на 3 (C)</p>
+                    </div>
+                    <div class="details-form__inputs" id="details-form__inputs">
+
+                    </div>
+                    <div class="details-form__buttons">
+                        <button type="submit" class="btn btn-danger ml-4 pr-4 pl-4" id="inputs-clear">Очистить</button>
+                        <button type="submit" class="btn btn-primary ml-4 pr-4 pl-4">Принять</button>
+                    </div>
+                </form>
+            </div>
+            <div class="problem-solving d-flex flex-column align-items-start justify-content-start" id="problem-solving">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container h-100">
+            <div class="row h-100 d-flex justify-content-end align-items-center">
+                <p class="footer-text m-0">Anita Matevosyan, КТбо3-9</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div></body></html>
